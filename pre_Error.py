@@ -22,10 +22,10 @@ def sklearn_Err(pred=0,true=0):
 def Hydro_Err(pred=0,true=0):
     sim=pred
     obs=true
-    pre_Error={}
-    optimalValue={}
-    worstValue={}
-    distanceValue={}
+    pre_Error={}#目标函数
+    optimalValue={}#各目标函数最优值
+    worstValue={}#各目标函数最差值
+    distanceValue={}#距离函数最差值
 
     pre_Error['me']=he.me(sim, obs)
     optimalValue['me']=0
